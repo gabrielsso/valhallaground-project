@@ -1,0 +1,153 @@
+body{
+    background-image: url("imgs/background.png");
+    background-size: 50%;
+}
+
+li,a,button{
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+}
+
+header{
+    overflow: auto;
+    border-radius: 25px;
+    background-color: rgb(39, 39, 39);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+}
+
+.logo{
+    width: 20%;
+    height: auto;
+}
+
+button{
+    padding: 9px 25px;
+    background-color: rgb(0, 218, 247);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3 ease 0s;
+}
+
+button:hover{
+    background-color: rgba(0, 218, 247, 0.8);
+}
+
+/*CSS Pagina Inicial_Logado*/
+header a{
+    margin-left: auto;
+    margin-right: 10px;
+}
+
+.avatar_img{
+    border: solid teal 3px;
+    border-radius: 50%;
+    height: 55px;
+    width: 55px;
+}
+
+header p{
+    color:white;
+}
+
+.dropdown{
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:rgb(19, 19, 19);
+    min-width: 150px;
+    box-shadow: 0px 8px 16px 0px rgba(150, 150, 150, 0.2);
+    z-index: 1;
+}
+  
+.dropdown-content a {
+    float: none;
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+  
+.dropdown-content a:hover {
+    background-color: rgba(68, 68, 68, 0.342);
+}
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+/*Fim CSS Index_logado*/
+
+
+.navbar{
+    text-align: center;
+    padding: 25px 0px;
+}
+
+.navbar ul{
+    display: inline-block;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(39, 39, 39);
+    border-radius: 25px;
+}
+
+.navbar li{
+    float: left;
+}
+
+.navbar li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+.navbar li a:hover{
+    color: tomato;
+}
+
+/*CSS Corpo da noticia*/
+.news_container{
+    overflow: auto;
+    color: white;
+    text-align: center;
+    border: solid white 2px;
+    border-radius: 5px;
+    background-color: rgb(39, 39, 39);
+    display: flex;
+    flex-flow: column wrap;
+    width: 85%;
+    height: auto;
+    margin:auto;
+}
+
+.news_container iframe{
+    margin: auto;
+}
+
+.news_container h2{
+    color: lightblue;
+    font-size: 3em;
+    margin: auto;
+    margin-top: 5px;
+}
+
+.news_container p{
+    font-size: 1.2em;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
+/*Fim do CSS da noticia*/
