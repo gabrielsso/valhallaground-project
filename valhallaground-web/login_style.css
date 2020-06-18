@@ -69,6 +69,7 @@ button:hover{
 }
 
 .login_container{
+    overflow: auto;
     color: white;
     padding: 10px;
     text-align: center;
@@ -79,7 +80,24 @@ button:hover{
     border: solid white 1px;
 }
 
+.login_container input[type=text], .login_container input[type=password]{
+    width: 50%;
+}
+
+.login_container a label{
+    position: relative;
+    top: -13px;
+    cursor: pointer;
+}
+
+.login_container a:hover{
+    color: turquoise;
+}
+
 .login_container input[type=submit]{
+    display: block;
+    margin: auto;
+    margin-top: 5px;
     padding: 9px 25px;
     background-color: rgb(0, 218, 247);
     border: none;
