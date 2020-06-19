@@ -1,0 +1,111 @@
+body{
+    background-image: url("imgs/background.png");
+    background-size: 50%;
+}
+
+li,a,button{
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+}
+
+header{
+    border-radius: 25px;
+    background-color: rgb(39, 39, 39);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+}
+
+.logo{
+    width: 20%;
+    height: auto;
+}
+
+
+button{
+    padding: 9px 25px;
+    background-color: rgb(0, 218, 247);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3 ease 0s;
+}
+
+button:hover{
+    background-color: rgba(0, 218, 247, 0.8);
+}
+
+.navbar{
+    text-align: center;
+    padding: 25px 0px;
+}
+
+.navbar ul{
+    display: inline-block;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(39, 39, 39);
+    border-radius: 25px;
+}
+
+.navbar li{
+    float: left;
+}
+
+.navbar li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+.navbar li a:hover{
+    color: tomato;
+}
+
+.login_container{
+    overflow: auto;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    margin:auto;
+    height: auto;
+    width: 30%;
+    background-color: rgb(39, 39, 39);
+    border: solid white 1px;
+}
+
+.login_container input[type=text], .login_container input[type=password]{
+    width: 50%;
+}
+
+.login_container a label{
+    position: relative;
+    top: -13px;
+    cursor: pointer;
+}
+
+.login_container a:hover{
+    color: turquoise;
+}
+
+.login_container input[type=submit]{
+    display: block;
+    margin: auto;
+    margin-top: 5px;
+    padding: 9px 25px;
+    background-color: rgb(0, 218, 247);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3 ease 0s;
+}
+
+.login_container input[type=submit]:hover{
+    background-color: rgba(0, 218, 247, 0.8);
+}

@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Valhalla Grounds - Login</title>
-    <link rel="stylesheet" href="login_style.css">
+    <title>Valhalla Grounds - Cadastro</title>
+    <link rel="stylesheet" href="cadastro_style.css">
     <link rel="icon" href="imgs/icon_web.png" type="image/png" sizes="16x16">
 </head>
 <body>
@@ -25,19 +25,30 @@
     
    <div class="login_container">
         <form action="homepage_logado.html">
+            <h3>Cadastro</h3>
+            <hr width="100%">
             <label for="username">Login:</label><br>
             <input type="text" id="username" name="username"><br><br>
+            <label for="email">Email:</label><br>
+            <input type="text" id="email" name="email"><br><br>
             <label for="pwd">Senha:</label><br>
             <input type="password" id="pwd" name="pwd"><br><br>
-            <a href="#"><label>Esqueceu a sua senha?</label></a>
-            <input type="submit" value="Logar">
+            <label for="pwdAgain">Digite a senha novamente:</label><br>
+            <input type="password" id="pwdAgain" name="pwdAgain"><br><br>
+            <hr width="100%">
+            <h3>Informações pessoais</h3>
+            <hr width="100%">
+            <label for="name">Nome Completo:</label><br>
+            <input type="text" id="name" name="name"><br><br>
+            <label for="country">Pais:</label><br>
+            <input type="text" id="country" name="country"><br><br>
+            <label for="state">Estado:</label><br>
+            <input type="text" id="state" name="state"><br><br>
+            <label for="age">Idade:</label><br>
+            <input type="text" id="age" name="age"><br><br>
+            <hr width="100%">
+            <input type="submit" value="Cadastrar">
         </form>
-   </div>
-   <div class="login_container">
-    <form action="cadastro.html">
-        <label>Não possui conta? Registre-se!</label>
-        <input type="submit" value="Registrar">
-    </form>
    </div>
 
 </body>

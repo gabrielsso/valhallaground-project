@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valhalla Grounds - Alteração de dados</title>
+    <link rel="stylesheet" href="alterar_dados_style.css">
+    <link rel="icon" href="imgs/icon_web.png" type="image/png" sizes="16x16">
+</head>
+<body>
+    <header>
+        <img class="logo" src="imgs/Header-Logo.png" alt="logo">
+        <a href="perfil.html"><img class="avatar_img" src="imgs/perfil_example.jpeg" alt="avatar"></a>
+        <div class="dropdown">
+                <p>Bem vindo, LoremIpsum</p>
+            <div class="dropdown-content">
+                <a href="perfil.html">Acessar Perfil</a>
+                <a href="index.html">Deslogar</a>
+            </div>
+        </div>
+        
+    </header>
+    <div class="navbar">
+        <ul>
+            <li><a href="homepage_logado.html">Inicio</a></li>
+            <li><a href="cardlist_logado.html">Yu-Gi-Oh!</a></li>
+            <li><a href="cardlist_logado.html">Magic</a></li>
+            <li><a href="cardlist_logado.html">Pokemon</a></li>
+            <li><a href="cardlist_logado.html">Gwent</a></li>
+            <li><a href="cardlist_logado.html">Hearthstone</a></li>
+        </ul>
+    </div>
+    
+   <div class="login_container">
+        <form action="perfil.html">
+            <h3>Alteração de dados</h3>
+            <hr width="100%">
+            <label for="name">Nome Completo:</label><br>
+            <input type="text" id="name" name="name"><br><br>
+            <label for="country">Pais:</label><br>
+            <input type="text" id="country" name="country"><br><br>
+            <label for="state">Estado:</label><br>
+            <input type="text" id="state" name="state"><br><br>
+            <label for="age">Idade:</label><br>
+            <input type="text" id="age" name="age"><br><br>
+            <label for="desc">Descrição:</label><br>
+            <textarea type="text" id="desc" name="desc" rows="4" cols="50"></textarea><br><br>
+            <hr width="100%">
+            <input type="submit" value="Alterar">
+        </form>
+   </div>
+
+</body>
+</html>

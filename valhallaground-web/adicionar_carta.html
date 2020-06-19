@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valhalla Grounds - Adicionar carta</title>
+    <link rel="stylesheet" href="adicionar_carta_style.css">
+    <link rel="icon" href="imgs/icon_web.png" type="image/png" sizes="16x16">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <img class="logo" src="imgs/Header-Logo.png" alt="logo">
+        <a href="perfil.html"><img class="avatar_img" src="imgs/perfil_example.jpeg" alt="avatar"></a>
+        <div class="dropdown">
+                <p>Bem vindo, LoremIpsum</p>
+            <div class="dropdown-content">
+                <a href="perfil.html">Acessar Perfil</a>
+                <a href="index.html">Deslogar</a>
+            </div>
+        </div>
+        
+    </header>
+    <div class="navbar">
+        <ul>
+            <li><a href="homepage_logado.html">Inicio</a></li>
+            <li><a href="cardlist_logado.html">Yu-Gi-Oh!</a></li>
+            <li><a href="cardlist_logado.html">Magic</a></li>
+            <li><a href="cardlist_logado.html">Pokemon</a></li>
+            <li><a href="cardlist_logado.html">Gwent</a></li>
+            <li><a href="cardlist_logado.html">Hearthstone</a></li>
+        </ul>
+    </div>
+    
+   <div class="login_container">
+            <label for="game">Jogo:</label><br>
+            <select id="game" onchange="getDiv('div', this)">
+                <option value="1">Yu-Gi-Oh</option>
+                <option value="2">Magic</option>
+                <option value="3">Pokemon</option>
+                <option value="4">Gwent</option>
+                <option value="5">Hearthstone</option>
+            </select>
+            <br><br>
+            <hr width="100%">
+
+            <!--Cartas de yugioh-->
+            <div id="div1" style="display:none;">
+                <form action="cardlist_logado.html">
+                    <label for="img">Imagem da carta:</label>
+                    <input type="file" id="img" name="img" accept="image/*"><br><br>
+                    <label for="card_name">Nome da carta:</label><br>
+                    <input type="text" id="card_name" name="card_name"><br><br>
+                    <label for="card_type">Tipo de carta:</label><br>
+                    <input type="text" id="card_type" name="card_type"><br><br>
+                    <label for="card_attri">Atributo:</label><br>
+                    <input type="text" id="card_attri" name="card_attri"><br><br>
+                    <label for="card_monster_type">Tipo de monstro:</label><br>
+                    <input type="text" id="card_monster_type" name="card_monster_type"><br><br>
+                    <label for="card_level">Level:</label><br>
+                    <input type="text" id="card_level" name="card_level"><br><br>
+                    <label for="card_atk_def">Ataque e Defesa:</label><br>
+                    <input type="text" id="card_atk_def" name="card_atk_def"><br><br>
+                    <label for="card_code">Codigo da carta:</label><br>
+                    <input type="text" id="card_code" name="card_code"><br><br>
+                    <label for="card_desc">Descrição:</label><br>
+                    <textarea type="text" id="card_desc" name="card_desc" rows="4" cols="50"></textarea><br><br>
+                    <input type="submit" value="Adicionar">
+                </form>
+            </div>
+            <!--Fim do div-->
+
+            <!--Cartas de Magic-->
+            <div id="div2" style="display:none;">
+                <form action="cardlist_logado.html">
+                    <label for="img">Imagem da carta:</label>
+                    <input type="file" id="img" name="img" accept="image/*"><br><br>
+                    <label for="card_name">Nome da carta:</label><br>
+                    <input type="text" id="card_name" name="card_name"><br><br>
+                    <label for="card_mana_cost">Custo de mana:</label><br>
+                    <input type="text" id="card_mana_cost" name="card_mana_cost"><br><br>
+                    <label for="card_type">Tipo:</label><br>
+                    <input type="text" id="card_type" name="card_type"><br><br>
+                    <label for="card_expansion">Expansão:</label><br>
+                    <input type="text" id="card_expansion" name="card_expansion"><br><br>
+                    <label for="card_rarity">Raridade:</label><br>
+                    <input type="text" id="card_rarity" name="card_rarity"><br><br>
+                    <label for="card_atk_def">Ataque e Defesa:</label><br>
+                    <input type="text" id="card_atk_def" name="card_atk_def"><br><br>
+                    <label for="card_desc">Descrição:</label><br>
+                    <textarea type="text" id="card_desc" name="card_desc" rows="4" cols="50"></textarea><br><br>
+                    <input type="submit" value="Adicionar">
+                </form>
+            </div>
+            <!--Fim do div-->
+
+            <!--Cartas de Pokemon-->
+            <div id="div3" style="display:none;">
+                <form action="cardlist_logado.html">
+                    <label for="img">Imagem da carta:</label>
+                    <input type="file" id="img" name="img" accept="image/*"><br><br>
+                    <label for="card_name">Nome da carta:</label><br>
+                    <input type="text" id="card_name" name="card_name"><br><br>
+                    <label for="card_type">Tipo:</label><br>
+                    <input type="text" id="card_type" name="card_type"><br><br>
+                    <label for="card_life">Vida:</label><br>
+                    <input type="text" id="card_life" name="card_life"><br><br>
+                    <label for="card_rarity">Raridade:</label><br>
+                    <input type="text" id="card_rarity" name="card_rarity"><br><br>
+                    <label for="card_weak">Fraqueza:</label><br>
+                    <input type="text" id="card_weak" name="card_weak"><br><br>
+                    <label for="card_hab">Habilidade:</label><br>
+                    <textarea type="text" id="card_hab" name="card_hab" rows="4" cols="50"></textarea><br><br>
+                    <input type="submit" value="Adicionar">
+                </form>
+            </div>
+            <!--Fim do div-->
+
+            <!--Cartas de Gwent-->
+            <div id="div4" style="display:none;">
+                <form action="cardlist_logado.html">
+                    <label for="img">Imagem da carta:</label>
+                    <input type="file" id="img" name="img" accept="image/*"><br><br>
+                    <label for="card_name">Nome da carta:</label><br>
+                    <input type="text" id="card_name" name="card_name"><br><br>
+                    <label for="card_deck">Deck:</label><br>
+                    <input type="text" id="card_deck" name="card_deck"><br><br>
+                    <label for="card_type">Tipo:</label><br>
+                    <input type="text" id="card_type" name="card_type"><br><br>
+                    <label for="card_row">Posicionamento:</label><br>
+                    <input type="text" id="card_row" name="card_row"><br><br>
+                    <label for="card_str">Força:</label><br>
+                    <input type="text" id="card_str" name="card_str"><br><br>
+                    <label for="card_hab">Habilidade:</label><br>
+                    <textarea type="text" id="card_hab" name="card_hab" rows="4" cols="50"></textarea><br><br>
+                    <input type="submit" value="Adicionar">
+                </form>
+            </div>
+            <!--Fim do div-->
+
+            <!--Cartas de Hearthstone-->
+            <div id="div5" style="display:none;">
+                <form action="cardlist_logado.html">
+                    <label for="img">Imagem da carta:</label>
+                    <input type="file" id="img" name="img" accept="image/*"><br><br>
+                    <label for="card_name">Nome da carta:</label><br>
+                    <input type="text" id="card_name" name="card_name"><br><br>
+                    <label for="card_type">Tipo:</label><br>
+                    <input type="text" id="card_type" name="card_type"><br><br>
+                    <label for="card_rarity">Raridade:</label><br>
+                    <input type="text" id="card_rarity" name="card_rarity"><br><br>
+                    <label for="card_class">Classe:</label><br>
+                    <input type="text" id="card_class" name="card_class"><br><br>
+                    <label for="card_craft_cost">Custo para craftar:</label><br>
+                    <input type="text" id="card_craft_cost" name="card_craft_cost"><br><br>
+                    <label for="card_yield">Quantidade pro quebra:</label><br>
+                    <input type="text" id="card_yield" name="card_yield"><br><br>
+                    <label for="card_mana_cost">Custo de mana:</label><br>
+                    <input type="text" id="card_mana_cost" name="card_mana_cost"><br><br>
+                    <label for="card_desc">Descrição:</label><br>
+                    <textarea type="text" id="card_desc" name="card_desc" rows="4" cols="50"></textarea><br><br>
+                    <input type="submit" value="Adicionar">
+                </form>
+            </div>
+            <!--Fim do div-->
+   </div>
+
+</body>
+</html>

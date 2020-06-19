@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Valhalla Grounds - Login</title>
-    <link rel="stylesheet" href="login_style.css">
+    <title>Valhalla Grounds - Recuperando senha</title>
+    <link rel="stylesheet" href="recuperar_senha_style.css">
     <link rel="icon" href="imgs/icon_web.png" type="image/png" sizes="16x16">
 </head>
 <body>
@@ -24,20 +24,14 @@
     </div>
     
    <div class="login_container">
-        <form action="homepage_logado.html">
-            <label for="username">Login:</label><br>
-            <input type="text" id="username" name="username"><br><br>
-            <label for="pwd">Senha:</label><br>
-            <input type="password" id="pwd" name="pwd"><br><br>
-            <a href="#"><label>Esqueceu a sua senha?</label></a>
-            <input type="submit" value="Logar">
+        <form action="login.html">
+            <p>Digite sua nova senha:</p>
+            <label for="new_pwd">Senha nova:</label><br>
+            <input type="text" id="new_pwd" name="new_pwd"><br><br>
+            <label for="new_pwd_again">Digite novamente a senha:</label><br>
+            <input type="text" id="new_pwd_again" name="new_pwd_again"><br><br>
+            <input type="submit" value="Redefinir">
         </form>
-   </div>
-   <div class="login_container">
-    <form action="cadastro.html">
-        <label>Não possui conta? Registre-se!</label>
-        <input type="submit" value="Registrar">
-    </form>
    </div>
 
 </body>
